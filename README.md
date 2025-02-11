@@ -5,7 +5,7 @@ Go to Gaia API Keys and create a new key. Save the API key somewhere since you w
 Download the Python Script:
 
 Run:
-curl -L -o gaiabot.py https://github.com/0xmoei/Gaianet-AI/raw/main/gaiabot.py
+curl -L -o gaiabot.py https://raw.githubusercontent.com/mrbom97/GaiaNet-AI/main/gaiabot.py
 Run the Script:
 
 Open a screen to run the bot in the background, so if you closed the terminal, it won't stop:
