@@ -18,7 +18,7 @@ logging.basicConfig(
 BASE_URL = "https://tweet-writer.gaia.domains"
 MODEL = "qwen2-0.5b-instruct"
 MAX_RETRIES = 100  # Essentially infinite retries
-RETRY_DELAY = 5  # Seconds between retries
+RETRY_DELAY = 10  # Seconds between retries
 QUESTION_DELAY = 1  # Seconds between successful questions
 
 QUESTIONS = [
