@@ -18,8 +18,8 @@ logging.basicConfig(
 BASE_URL = "https://tweet-writer.gaia.domains"
 MODEL = "qwen2-0.5b-instruct"
 MAX_RETRIES = 30  # Essentially infinite retries
-RETRY_DELAY = 15  # Seconds between retries
-QUESTION_DELAY = 5  # Seconds between successful questions
+RETRY_DELAY = 30  # Seconds between retries
+QUESTION_DELAY = 30  # Seconds between successful questions
 
 QUESTIONS = [
    "What innovations are needed in Best practices for tweeting?",
