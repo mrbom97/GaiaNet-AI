@@ -17,9 +17,9 @@ logging.basicConfig(
 # Configuration
 BASE_URL = "https://tweet-writer.gaia.domains"
 MODEL = "qwen2-0.5b-instruct"
-MAX_RETRIES = 100  # Essentially infinite retries
-RETRY_DELAY = 10  # Seconds between retries
-QUESTION_DELAY = 1  # Seconds between successful questions
+MAX_RETRIES = 30  # Essentially infinite retries
+RETRY_DELAY = 15  # Seconds between retries
+QUESTION_DELAY = 5  # Seconds between successful questions
 
 QUESTIONS = [
    "What innovations are needed in Best practices for tweeting?",
@@ -2307,7 +2307,7 @@ def chat_with_ai(api_key: str, question: str) -> str:
                 f"{BASE_URL}/v1/chat/completions",
                 headers=headers,
                 json=data,
-                timeout=30
+                timeout=20
             )
 
             if response.status_code == 200:
